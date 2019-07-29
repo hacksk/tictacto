@@ -40,10 +40,10 @@ function tictoc(t) {
     myarray[2][2] = document.getElementById('33');
     if (t == myarray[0][0] || t == myarray[0][2] || t == myarray[1][1] || t == myarray[2][0] || t == myarray[2][2]) {
 
-        if (myarray[0][0].innerHTML == myarray[1][1].innerHTML && myarray[1][1].innerHTML == myarray[2][2].innerHTML && myarray[0][0].innerHTML != '_') {
+        if (myarray[0][0].innerHTML == myarray[1][1].innerHTML && myarray[1][1].innerHTML == myarray[2][2].innerHTML && myarray[0][0].innerHTML != '_' && myarray[1][1].innerHTML != '_' && myarray[2][2].innerHTML != '_') {
             alert(a + ' won!');
             location.reload();
-        } else if (myarray[2][0].innerHTML == myarray[1][1].innerHTML && myarray[1][1].innerHTML == myarray[0][2].innerHTML && myarray[2][0] != '_') {
+        } else if (myarray[2][0].innerHTML == myarray[1][1].innerHTML && myarray[1][1].innerHTML == myarray[0][2].innerHTML && myarray[2][0] != '_' && myarray[1][1].innerHTML != '_' && myarray[2][0].innerHTML != '_') {
             alert(a + ' won!');
             location.reload();
         }
